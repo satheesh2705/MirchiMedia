@@ -1,0 +1,67 @@
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.forgot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(9, 36, 68); */
+    background-color: rgba(255, 255, 255, 0.144);
+    width: 300px;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px white solid;
+
+}
+
+h1{
+    color: white;
+}
+
+.otpdetail p{
+    color: rgb(160, 160, 160);
+    font-weight:600;
+    font-size: large;
+    font-family: serif;
+}
+
+.otpdetail input,button{
+    margin-bottom: 30px;
+
+}
+
+.otpdetail button{
+    width: 250px;
+    padding: 8px;
+    font-size: 20px;
+    font-family: serif;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background-color:rgb(22, 202, 133);
+    font-weight: 700;
+    color: white;
+}
+
+.otpdetail input{
+    width: 240px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+
+}
+

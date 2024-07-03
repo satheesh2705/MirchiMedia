@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/music.css">
+    <style>
+        
+footer {
+    background-color: #275217ad;
+    color: rgb(203, 38, 38);
+    margin-top: 20px;
+    padding: 20px 0px 10px 0px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-logo h2 {
+    font-weight: 700;
+    background: linear-gradient(to right, #ff7e5f, #feb47b, #5fc9e8, #7be8c7, #9effa5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    background-clip: text;
+    cursor: pointer;
+}
+
+.footer-logo img {
+    width: 80px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 35px auto 0 auto;
+    cursor: pointer;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ff7171;
+}
+
+.footer-social ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-social ul li a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer-social ul li a:hover {
+    color: #ff7171;
+}
+
+.footer-subscribe form {
+    margin-top: 14px;
+    display: flex;
+}
+
+.footer-subscribe input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 250px;
+}
+
+.footer-subscribe button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #e74c3c;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-subscribe button:hover {
+    background-color: #c0392b;
+}
+
+.footer-bottom {
+    background-color: #111;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 13.5px;
+    color: #fff;
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #ff7171;
+}
+    </style>
+</head>
+<body>
+    
+   
+    <div class="navbar">
+        <div class="searchBox">
+            <input type="text" placeholder="Search your favourite">
+            <i class="fa-solid fa-magnifying-glass" style="color: gray;"></i>
+        </div>
+        <div>
+        <a href="/html/home.html">Home</a>
+        <a href="/html/movie.html">Go to Movie</a>
+        <a href="/html/m-language.html">Languages</a>
+        <a href="/html/login.html">Log out</a>
+        </div>
+    </div>
+    <div class="music-director">
+        <h3>MUSIC DIRECTOR</h3>
+        <div class="music-dir">
+            <a href="/html/yuvan.html"><img src="/imajes/u1.jpg"  id="mdimage"><p>Yuvan Shankar Raja</p></a>
+            <a href="/html/gv.html"><img src="/imajes/Gv.jpg" id="mdimage" ><p>Gv.Prakash</p></a>
+            <a href="/html/Arrrahman.html"><img src="/imajes/arrahman.jpg" id="mdimage"><p>AR.Rahman</p></a>
+            <a href="/html/s-narayanan.html"><img src="/imajes/santhosh2.jpg" id="mdimage"><p>Santhosn Narayanan</p></a>
+        </div>
+    </div>
+    <h3 id="artist">ARTIST/PLAYBACK SINGER</h3>
+    <div class="s-row">
+        <a href="/html/anirudh.html"><img src="/imajes/Anirudh.jpg" id="ar-image"><P>Anirudh</P></a>
+        <a href="/html/hariharan.html"><img src="/imajes/Hariharan.jpg" id="ar-image"><p>Hariharan</p></a>
+        <a href="/html/pradeepkumar.html"><img src="/imajes/Pradeep.jpg" id="ar-image"><p>Pradeep Kumar</p></a>
+        <a href="/html/sidsriram.html"><img src="/imajes/Sidsriram.jpg" id="ar-image"><p>Sidsriram</p></a>
+    </div>
+    <h3 id="album">ALBUMS</h3>
+    <div class="t-row">
+        <a href="/html/3.html"><img src="/imajes/three.jpg" id="al-image"><p>3</p></a>
+        <a href="/html/gilli.html"><img src="/imajes/Ghilli.jpg" id="al-image" ><p>Gilli</p></a>
+        <a href="/html/n-rowdythan.html"><img src="/imajes/Nanaum rowdy tha.jpg" id="al-image"><p>Nanum Rowdydhan</p></a>
+        <a href="/html/varanam1000.html"><img src="/imajes/varanam1000.jpg" id="al-image"><p>Varanam Ayiram</p></a>
+    </div>
+    <h3 id="language">Other Language Album</h3>
+    <div class="f-row">
+        <a href="/html/english.html"><img src="/imajes/after.jpg" alt="" id="o-image"><p>After</p></a>
+        <a href="/html/malayalam.html"><img src="/imajes/malayalamalbum.jpg" alt="" id="o-image"><p>Oru yemanin kathal kathai</p></a>
+        <a href="/html/hindi.html"><img src="/imajes/ashiqui2.jpg" alt="" id="o-image"><p>Aashiqui 2</p></a>
+        <a href="/html/kannada.html"><img src="/imajes/puneeth.jpg" alt="" id="o-image"><p>Yuvarathna</p></a>
+    </div>
+    <div class="f-row" style="margin-top: 3.4%;">
+        <a href="/html/english.html"><img src="/imajes/Sidsriram.jpg" alt="" id="o-image"><p>Sriram</p></a>
+        <a href="/html/malayalam.html"><img src="/imajes/telugu.jpg" alt="" id="o-image"><p>Kantara</p></a>
+        <a href="/html/hindi.html"><img src="/imajes/sita.jpg" alt="" id="o-image"><p>Sita Raaman</p></a>
+        <a href="/html/kannada.html"><img src="/imajes/kannadms.jpg" alt="" id="o-image"><p>Chanakya</p></a>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/imajes/logo.png" alt="app-logo">
+                <h2>MirchiMedia</h2>
+            </div>
+            <div class="footer-links" style="margin-top: 2%;">
+                
+                <ul>
+                    <li><a href="#action">Action</a></li>
+                    <li><a href="#romance">Romance</a></li>
+                    <li><a href="#tv-shows">Tv Shows</a></li>
+                    <li><a href="#documentaries">Documentaries</a></li>
+                    <li><a href="#animation">Animation</a></li>
+                </ul>
+            </div>
+            <div style="margin-top: 2%;"
+             class="footer-links">
+               
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-social" style="margin-top: -3%;">
+                <h3 style="margin-left: -2% ;">Connect with Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-subscribe" style="margin-top: -3%;">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form action="#">
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

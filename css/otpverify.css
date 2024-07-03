@@ -1,0 +1,92 @@
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.otp{
+    background-color: rgba(255, 255, 255, 0.096);
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    border: 1px white solid;
+}
+
+h1{
+    color: white;
+}
+
+.otpverify{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.otpverify p{
+    color: rgb(160, 160, 160);
+    font-weight:600;
+    font-size: large;
+    font-family: serif;
+}
+
+.otpverify input{
+    height: 40px;
+    width: 260px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.otpverify input,button{
+    margin-bottom: 30px;
+}
+
+.otpverify button{
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+    font-family: serif;
+    border: none;
+    border-radius: 15px;
+    background-color:rgb(9, 165, 165);
+    font-weight: 700;
+    color: white;
+}
+
+.otpFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.otpFooter *{
+    margin: 0%;
+    padding: 2px;
+    color: grey;
+    font-size: 18px;
+}
+
+
+.otpFooter p a{
+    text-decoration: none;
+    color: wheat;
+}
+
+
+.otpFooter p a:hover{
+    text-decoration: none;
+    color:rgb(33, 108, 207);
+}

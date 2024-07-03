@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Movies</title>
+    <link rel="stylesheet" href="/css/movie.css">
+    <style>
+        
+        footer {
+            background-color: #275217ad;
+            color: rgb(203, 38, 38);
+            margin-top: 20px;
+            padding: 20px 0px 10px 0px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .footer-content h3 {
+            margin-bottom: 10px;
+        }
+        
+        .footer-logo {
+            margin-bottom: 20px;
+        }
+        
+        .footer-logo h2 {
+            font-weight: 700;
+            background: linear-gradient(to right, #ff7e5f, #feb47b, #5fc9e8, #7be8c7, #9effa5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+            background-clip: text;
+            cursor: pointer;
+        }
+        
+        .footer-logo img {
+            width: 80px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            margin: 35px auto 0 auto;
+            cursor: pointer;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 8px;
+        }
+        
+        .footer-links ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links ul li a:hover {
+            color: #ff7171;
+        }
+        
+        .footer-social ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        .footer-social ul li a {
+            color: #fff;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-social ul li a:hover {
+            color: #ff7171;
+        }
+        
+        .footer-subscribe form {
+            margin-top: 14px;
+            display: flex;
+        }
+        
+        .footer-subscribe input[type="email"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+            width: 250px;
+        }
+        
+        .footer-subscribe button {
+            padding: 10px 20px;
+            border: none;
+            outline: none;
+            border-radius: 0 5px 5px 0;
+            background-color: #e74c3c;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .footer-subscribe button:hover {
+            background-color: #c0392b;
+        }
+        
+        .footer-bottom {
+            background-color: #111;
+            text-align: center;
+            padding: 10px 0px;
+            font-size: 13.5px;
+            color: #fff;
+        }
+        
+        .footer-bottom a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-bottom a:hover {
+            color: #ff7171;
+        }
+            </style>
+</head>
+<body>
+    <label id="MenuIconForMobile">
+        <input type="checkbox">
+        <div class="toggle">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+        </div>
+        <div class="slide">
+            <h1>Menu</h1>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="/html/movie-languages.html">Languages</a></li>
+                <li><a href="/html/lovemovies.html">Love Movies</a></li>
+                <li><a href="/html/horror.html">Horror Movies</a></li>
+                <li><a href="/html/action.html">Action Movies</a></li>
+                <li><a href="/html/animation.html">Animation</a></li>
+                <!-- <li><a href="/html/music.html">Go to Songs</a></li> -->
+                
+            </ul>
+        </div>
+    </label>
+    <div class="navbar">
+        <div class="NavSearch">
+            <input type="text" placeholder="Search your favourite" id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="nav-list">
+            <a href="/html/home.html">Home</a>
+            <a href="/html/music.html">Go To Music</a>
+            <a href="/html/movie-languages.html">Languages</a>
+            <a href="/html/authentication/login.html">Log Out</a>
+        </div>
+    </div>
+    <!-- slide -->
+    <div class="auto-slide">
+        <div class="slider">
+            <figure>
+                <div class="slide1">
+                    <a href="/html/lover.html"><img src="/imajes/lover.jpg" alt=""></a>
+                </div>
+                <div class="slide1">
+                    <a href="/html/avengers.html"><img src="/imajes/cropped-1000-500-999107.jpg" alt=""></a>
+                </div>
+                <div class="slide1">
+                    <a href="/html/manjumelboys.html"><img src="/imajes/maxresdefault.jpg" alt=""></a>
+                </div>
+                <div class="slide1">
+                    <a href="/html/ingunanthankingu.html"><img src="/imajes/inga.jpg" alt=""></a>
+                </div>
+            </figure>
+        </div>
+    </div>
+    <div class="love-movies">
+        <div>
+            <h2 style="color: white;">New -Release</h2>
+        </div>
+        <div class="l-image">
+            <a href="/html/star.html"><img src="/imajes/Star.jpg" alt="" id="f-rowimage"><p>Star</p></a>
+            <a href="/html/avesham.html"><img src="/imajes/149f6d196310697.661e149635612.jpg" alt="" id="f-rowimage"><p>Avesham</p></a>
+            <a href="/html/c-miller.html"><img src="/imajes/captainmiller.jpg" alt="" id="f-rowimage"><p>Captain Miller</p></a>
+            <a href="/html/jailer.html"><img src="/imajes/jailer.jpg" alt="" id="f-rowimage"><p>Jailer</p></a>
+            <a href="/html/aneethi.html"><img src="/imajes/aneethi.jpg" alt="" id="f-rowimage"><p>Aneethi</p></a>
+            <!-- <a href=""><img src="/imajes/moonu.jpg" alt="" id="f-rowimage"><p>Mani</p></a> -->
+        </div>
+    </div>
+    <div class="love-movies">
+        <div>
+            <h2 style="color: white;">Super Heros</h2>
+        </div>
+        <div class="l-image">
+            <a href="/html/spiderman.html"><img src="/imajes/spiderman.jpg" alt="" id="f-rowimage"><p>Spiderman</p></a>
+            <a href="/html/blackadam.html"><img src="/imajes/blackadam.jpg" alt="" id="f-rowimage"><p>BlackAdam</p></a>
+            <a href="/html/avatar2.html"><img src="/imajes/avatar2.jpg" alt="" id="f-rowimage"><p>Avatar Way of Water</p></a>
+            <a href="/html/doj.html"><img src="/imajes/Batman.jpeg" alt="" id="f-rowimage"><p>Batman vs Superman</p>Down of justice</a>
+            <a href="/html/loki.html"><img src="/imajes/loki.jpg" alt="" id="f-rowimage"><p>Loki</p></a>
+            <!-- <a href=""><img src="/imajes/moonu.jpg" alt="" id="f-rowimage"><p>Mani</p></a> -->
+        </div>
+    </div>
+    <div class="love-movies">
+        <div>
+            <h2 style="color: white;">Family Movies</h2>
+        </div>
+        <div class="l-image">
+            <a href="/html/kadaikutyy.html"><img src="/imajes/kadaikutyy.jpg" alt="" id="f-rowimage"><p>Kadikutty Singam</p></a>
+            <a href="/html/varisu.html"><img src="/imajes/varisu.jpg_large" alt="" id="f-rowimage"><p>Varisu</p></a>
+            <a href="/html/dada.html"><img src="/imajes/dada.jpg" alt="" id="f-rowimage"><p>DaDa</p></a>
+            <a href="/html/n-v-pillai.html"><img src="/imajes/nammaveetupillai.jpg" alt="" id="f-rowimage"><p>Namma Veetu Pillai</p></a>
+            <a href="/html/viswasam.html"><img src="/imajes/viswasam.jpg" alt="" id="f-rowimage"><p>Viswasam</p></a>
+            <!-- <a href=""><img src="/imajes/moonu.jpg" alt="" id="f-rowimage"><p>Mani</p></a> -->
+        </div>
+    </div>
+    <div class="love-movies">
+        <div>
+            <h2 style="color: white;"> Kids & Cartoons</h2>
+        </div>
+        <div class="l-image">
+            <a href="/html/iceage.html"><img src="/imajes/iceage.jpg" alt="" id="f-rowimage"><p>Ice Age MeltDown</p></a>
+            <a href="/html/kungfupanda.html"><img src="/imajes/kunfupanda.jpg" alt="" id="f-rowimage"><p>Kung Fu Panda</p></a>
+            <a href="/html/luca.html"><img src="/imajes/luca.jpeg" alt="" id="f-rowimage"><p>Luca</p></a>
+            <a href="/html/dinosuar.html"><img src="/imajes/dinosaur.jpg" alt="" id="f-rowimage"><p>Dinosaur</p></a>
+            <a href="/html/moanna.html"><img src="/imajes/moana.jpg" alt="" id="f-rowimage"><p>Moana</p></a>
+            <!-- <a href=""><img src="/imajes/moonu.jpg" alt="" id="f-rowimage"><p>Mani</p></a> -->
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo" style="margin-top: 1.8%;">
+                <img src="/imajes/b6.jpg" style="border-radius: 20px; box-shadow: 1px 1px 2px white;" alt="app-logo">
+                <h2 style="margin-top: 10%;">MirchiMedia</h2>
+            </div>
+            <div class="footer-links" style="margin-top: 2%;">
+                
+                <ul>
+                    <li><a href="#action">Action</a></li>
+                    <li><a href="#romance">Romance</a></li>
+                    <li><a href="#tv-shows">Tv Shows</a></li>
+                    <li><a href="#documentaries">Documentaries</a></li>
+                    <li><a href="#animation">Animation</a></li>
+                </ul>
+            </div>
+            <div style="margin-top: 2%;"
+             class="footer-links">
+               
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-social" style="margin-top: 3%;">
+                <h3 style="color:black;" >Connect with Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-subscribe" style="margin-top: 3%;">
+                <h3 style="color:black;">Subscribe to Our Newsletter</h3>
+                <form action="#">
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>

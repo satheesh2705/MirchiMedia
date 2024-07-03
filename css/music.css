@@ -1,0 +1,151 @@
+
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+
+
+
+
+
+
+
+body{
+    background-color: rgb(0, 0, 0);
+    background-image: url(/imajes/7.webp);
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+/* 
+input{
+    margin-left: 460px;
+    width: 300px;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    outline-color: rgb(0, 255, 0);
+    font-size: 15px;
+    background-color: bisque;
+     margin-top: 5px; 
+    
+ 
+}
+ i{
+    position: absolute;
+    left: 760px;
+    top: 15px;
+    color: gray;
+
+} 
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -45px;
+    background-color: rgb(59, 155, 30);
+    height: 35px;
+    padding-top: 15px;
+    width:100%;
+    position: fixed;
+
+} */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(52, 143, 24);
+    height: 8%;
+    width: 100%;
+    position: fixed;
+    margin-top: -90px;
+   
+}
+
+.searchBox{
+    margin: 0 0 0 10%;
+    height: 70%;
+    width: 25%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+     
+}
+
+.searchBox input{
+    border: none;
+    outline: none;
+    width: 80%;
+    font-size: 15px;
+}
+
+.navbar a{
+    padding-right: 20px;
+    text-decoration: none;
+    font-size:20px ;
+    font-weight: 500;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+
+    color: rgb(255, 255, 255);
+}
+
+.navbar a:hover{
+    color: rgb(0, 0, 0);
+    
+}
+
+h3{
+    margin-top: 90px;
+    margin-left: 83px;
+    color: white;
+    padding-bottom: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+
+
+}
+
+.music-dir,.s-row,.t-row,.f-row{
+    display: flex;
+    justify-content:space-evenly;
+}
+#mdimage,
+#ar-image ,
+#al-image,
+#o-image{
+    height: 250px;
+    width: 230px;
+    /* box-shadow: 0 0 10px 0 rgb(255, 255, 255); */
+    border-radius: 20px;
+    transition: transform .5s;
+    border: 2px solid white;
+
+}
+
+.music-dir a,.s-row a,.t-row a,.f-row a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+#mdimage:hover,#ar-image:hover,#al-image:hover,#o-image:hover{
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#artist,#album,#language{
+    margin-top:20px;
+}
+
+
+p{
+    padding-top: 20px;
+    text-align: center;
+}
