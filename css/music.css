@@ -137,7 +137,7 @@ h3{
 #mdimage:hover,#ar-image:hover,#al-image:hover,#o-image:hover{
     -ms-transform: scale(1.2);
     -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    transform: scale(0.92);
 }
 
 #artist,#album,#language{

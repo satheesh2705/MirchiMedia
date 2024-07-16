@@ -35,18 +35,16 @@ let userDetails = [
    console.log( UserName+" " +UserPassword );
    userDetails.map((userDetail) =>{
 
-      if((userDetail.name == UserName || userDetail.email == UserName || userDetail.mobileNumber == UserName) ){
+   if((userDetail.name == UserName || userDetail.email == UserName || userDetail.mobileNumber == UserName) ){
             if( userDetail.password == UserPassword ) {
                window.location.href = "/html/home.html";
                alert("Succefully Login")
             }
             else{
                alert("Enter Valid Password ");
-            }
-            
-         }
-        
-      }
+            } 
+         } 
+     }
    )
    
  }
@@ -106,7 +104,6 @@ function SignUpValidation(){
          MailIdFlag = false
       }
 
-
 // ===============================
 // Validation for Newpassword
 
@@ -159,30 +156,32 @@ else{
    }
 
 function ForgotValidation(){
+
    let mobile = document.getElementById('Mobile').value
+
    userDetails.map((userDetail)  => {
+  
          if (userDetail.mobileNumber == mobile  || userDetail.email == mobile ) {
             if (userDetail.mobileNumber == mobile) {
-                  mobarr[0] = userDetail.mobileNumber
-                  window.location.href="./otpverify.html"
                   sendOTP()
-
+                  window.location.href = "./otpverify.html"
                }
             else{
-               console.log("mail id");
                window.location.href="./otpverify.html"
                sendOTP()
             }
          }                  
       }
    )
-   }
+ }
 
 var otpArr = [] ;
 
 function sendOTP() {
+      let otplabel = document.getElementById('otplabel')
    let newotp = Math.floor(Math.random()*9999)
    alert("your otp is : "+newotp)
+
    otpArr[0] = newotp ;
    }
 
@@ -190,7 +189,7 @@ function verifyOTP() {
       console.log(otpArr[0]);
       let userotp = document.getElementById('verify').value
       if( otpArr[0]  == userotp){
-            alert("correct otp")
+            alert("OTP Verification")
             window.location.href="./newpassword.html"
       }
       else{
@@ -225,44 +224,42 @@ function CountChecking(value) {
    return [Upper, Lower, Number, Symbol];
    }
 
-function handleLoginValidation() {
-    const UserName = document.getElementById('UserName').value  
-    const UserPassword = document.getElementById('UserPassword').value
+// function handleLoginValidation() {
+//     const UserName = document.getElementById('UserName').value  
+//     const UserPassword = document.getElementById('UserPassword').value
 
-   userDetails.map((userDetail) =>{
-         if (
-         (userDetail.name == UserName || userDetail.email == UserName || userDetail.mobileNumber == UserName ) 
-         && ( userDetail.password == UserPassword )) {
-               window.location.href ="../home.html"
-            }
-         }
-      )
-   }
+//    userDetails.map((userDetail) =>{
+//          if (
+//          (userDetail.name == UserName || userDetail.email == UserName || userDetail.mobileNumber == UserName ) 
+//          && ( userDetail.password == UserPassword )) {
+//                window.location.href ="../home.html"
+//             }
+//          }
+//       )
+//    }
 
 function NewPassValidation(){
-
+   alert("hello")
       let MobileNo = document.getElementById('mobNo').value 
       let ConfirmPass = document.getElementById('c-password').value
       let PasswordFlag = true
 
          [Upper, Lower, Number, Symbol] = CountChecking(ConfirmPass);
-          
+      
           if(  ( Upper >=1 && Lower >= 1 && Number >=1  &&  Symbol >= 1 ) && 
                (ConfirmPass.length>=8 && ConfirmPass.length<=20) )
             {
-              console.log("correct pass");
+              
               PasswordFlag = true
           }
           else{
               alert("Weak Password")
               PasswordFlag = false
           }
-
-          console.log(Upper, Lower, Number, Symbol);
       userDetails.map((userDetail) => {
-         if ( userDetail.mobileNumber == MobileNo) {
-            console.log(" your mobileNumber is :  "+ MobileNo);
-            console.log( "new pass : "+ ConfirmPass);
+         if ( userDetail.mobileNumber == MobileNo || userDetail.email == MobileNo) {
+            // console.log(" your mobileNumber is :  "+ MobileNo);
+            // console.log( "new pass : "+ ConfirmPass);
             userDetail.password = ConfirmPass
             }
          }
